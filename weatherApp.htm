@@ -4,7 +4,7 @@
     <title>Weather App</title>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-
+<script src="../Weather App/weatherApp.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
@@ -21,32 +21,29 @@
 
 
 
+
 </head>
 
 <body>
-    <nav class="navbar navbar-default">
+     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" role="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
-      </button>
-                <a class="navbar-brand " style="font-size: 3em; color:black;">Weatherly</a>
+                <a class="navbar-brand">WEATHERLY</a>
             </div>
-            <ul class="nav navbar-nav navbar-right ">
-
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> </span><span style="font-size:3em;" class="glyphicon glyphicon-plus"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">info</a></li>
-                    </ul>
-                </li>
-            </ul>
         </div>
-
-        </div>
-
     </nav>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                
+            </div>
+            <div class="col-md-8">
+                <label>Enter postal code: <input type="text" id="postalCode" placeholder="postal code" /></label>
+                <button type="button" id="lookupWeatherForPostalCode">ZIP</button>
+            </div>
+        </div>
+    </div>
 
 
     <body>
@@ -55,57 +52,22 @@
 
 
 
-        <div class="container-fluid">
-            <div class="col-md-3" style= "margin: 25px; height: 450px;"><img src="wimage/sunny.jpeg" alt="sunny" style="height:320px;width:320px;" background="cover" />Sunny</div>
-            <div class="col-md-3" style="margin: 25px; height: 450px;"><img src="wimage/cloudy.jpeg" alt="cloudy" style="height:320px;width:320px;" background="cover" />Cloudy</div>
-            <div class="col-md-3" style="margin: 25px; height: 450px;"><img src="wimage/rain.jpeg" alt="rain" style="height:320px;width:320px;" background="cover" />Rain</div>
+        <div class="container center">
+            
+            <div class="col-md-3" style="margin: 25px; height: 450px;"><img src="wimage/sunny.jpeg" alt="sunny" style="height:320px;width:320px;" background="cover" /></div>
+            <div class="col-md-3" style="margin: 25px; height: 450px;"><img src="wimage/cloudy.jpeg" alt="cloudy" style="height:320px;width:320px;" background="cover" /></div>
+            <div class="col-md-3" style="margin: 25px; height: 450px;"><img src="wimage/rain.jpeg" alt="rain" style="height:320px;width:320px;" background="cover" /></div>
+            
+            </div>
         </div>
-        <br/>
-        <div class="container-fluid">
-            <div class="col-md-3" style="margin: 25px; height: 450px;"><img src="wimage/snow.jpeg" alt="snow" style="height:320px;width:320px;" background="cover" />Snow</div>
-            <div class="col-md-3" style="margin: 25px; height: 450px;"><img src="wimage/sleet.jpeg" alt="sleet" style="height:320px;width:320px;" background="cover" />Sleet</div>
-            <div class="col-md-3" style="margin: 25px; height: 450px;"><img src="wimage/clear.jpeg" alt="clear" style="height:320px;width:320px;" background="cover" />Clear</div>
+        
+        <div class="container center">
+            <div class="col-md-3" style="margin: 25px; height: 450px;"><img src="wimage/snow.jpeg" alt="snow" style="height:320px;width:320px;" background="cover" /></div>
+            <div class="col-md-3" style="margin: 25px; height: 450px;"><img src="wimage/sleet.jpeg" alt="sleet" style="height:320px;width:320px;" background="cover" /></div>
+            <div class="col-md-3" style="margin: 25px; height: 450px;"><img src="wimage/clear.jpeg" alt="clear" style="height:320px;width:320px;" background="cover" /></div>
         </div>
 
-        <script>
-$(function(){
-
-$.ajax({
-url:"https://api.darksky.net/forecast/50b27b3201c2b8f7dc70688446641577/37.8267,-122.4233",
-dataType:"jsonp",
-success: function(result){
-  console.log(result.currently.summary);  
-}
-});
-
-});
-</script>
-
-
-
-        <script>
- 
-$(function(){
-
-$.ajax({
-url:"https://maps.googleapis.com/maps/api/geocode/json?address=41240=AIzaSyBZ3-N0emDDcRv06ohzzKn4jF00eev977Y",
-dataType:"json",
-success: function(result){
-  console.log(result);  
-}
-});
-
-});
-
-
-
-
- 
-
-</script>
-
-
-
+        
 
 
     </body>
