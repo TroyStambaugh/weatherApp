@@ -37,10 +37,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> </span><span style="font-size:3em;" class="glyphicon glyphicon-plus"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">State</a></li>
-                        <li><a href="#">City</a></li>
-                        <li><a href="#">Zip</a></li>
-                        <li role="separator" class="divider"></li>
+                        <li><a href="#">info</a></li>
                     </ul>
                 </li>
             </ul>
@@ -49,19 +46,28 @@
         </div>
 
     </nav>
-    <div class="container-fluid">
-        <div class="col-md-3" style="background-color: green; margin: 25px; height: 40%;">Sunny</div>
-        <div class="col-md-3" style="background-color: green; margin: 25px; height: 40%;">Cloudy</div>
-        <div class="col-md-3" style="background-color: green; margin: 25px; height: 40%;">Rain</div>
-    </div>
-    <br/>
-    <div class="container-fluid">
-        <div class="col-md-3" style="background-color: green; margin: 25px; height: 40%;">Snow</div>
-        <div class="col-md-3" style="background-color: green; margin: 25px; height: 40%;">Sleet</div>
-        <div class="col-md-3" style="background-color: green; margin: 25px; height: 40%;">Clear</div>
-    </div>
 
-    <script>
+
+
+    <body>
+
+
+
+
+
+        <div class="container-fluid">
+            <div class="col-md-3" style= "margin: 25px; height: 450px;"><img src="wimage/sunny.jpeg" alt="sunny" style="height:320px;width:320px;" background="cover" />Sunny</div>
+            <div class="col-md-3" style="margin: 25px; height: 450px;"><img src="wimage/cloudy.jpeg" alt="cloudy" style="height:320px;width:320px;" background="cover" />Cloudy</div>
+            <div class="col-md-3" style="margin: 25px; height: 450px;"><img src="wimage/rain.jpeg" alt="rain" style="height:320px;width:320px;" background="cover" />Rain</div>
+        </div>
+        <br/>
+        <div class="container-fluid">
+            <div class="col-md-3" style="margin: 25px; height: 450px;"><img src="wimage/snow.jpeg" alt="snow" style="height:320px;width:320px;" background="cover" />Snow</div>
+            <div class="col-md-3" style="margin: 25px; height: 450px;"><img src="wimage/sleet.jpeg" alt="sleet" style="height:320px;width:320px;" background="cover" />Sleet</div>
+            <div class="col-md-3" style="margin: 25px; height: 450px;"><img src="wimage/clear.jpeg" alt="clear" style="height:320px;width:320px;" background="cover" />Clear</div>
+        </div>
+
+        <script>
 $(function(){
 
 $.ajax({
@@ -77,16 +83,15 @@ success: function(result){
 
 
 
-    <script>
+        <script>
  
 $(function(){
 
 $.ajax({
-url:"https://maps.googleapis.com/maps/api/geocode/json?address=41240=AIzaSyBZ3-N0emDDcRv06ohzzKn4jF00eev977Y"
-,
-dataType:"jsonp",
+url:"https://maps.googleapis.com/maps/api/geocode/json?address=41240=AIzaSyBZ3-N0emDDcRv06ohzzKn4jF00eev977Y",
+dataType:"json",
 success: function(result){
-  console.log(result.currently.summary);  
+  console.log(result);  
 }
 });
 
@@ -103,6 +108,6 @@ success: function(result){
 
 
 
-</body>
+    </body>
 
 </html>
