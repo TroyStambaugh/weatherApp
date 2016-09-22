@@ -1,4 +1,4 @@
-<html>
+
 
 <head>
     <title>Weather App</title>
@@ -27,7 +27,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" role="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
                     aria-expanded="false">
       </button>
                 <a class="navbar-brand " style="font-size: 3em; color:black;">Weatherly</a>
@@ -61,23 +61,7 @@
         <div class="col-md-3" style="background-color: green; margin: 25px; height: 40%;">Clear</div>
     </div>
 
-    <script>
-$(function(){
-
-$.ajax({
-url:"https://api.darksky.net/forecast/50b27b3201c2b8f7dc70688446641577/37.8267,-122.4233",
-dataType:"jsonp",
-success: function(result){
-  console.log(result.currently.summary);  
-}
-});
-
-});
-</script>
-
-
-
-    <script>
+      <script>
  
 $(function(){
 
