@@ -84,9 +84,25 @@ $(function () {
 
 
 
+//test//
 
+function generateCard(personInfo){
+var template=$("#template").html();
+template=template.replace("");
+template=template.replace("");
+template=template.replace("");
+return template;
 
+function testGenerateCard(){
+    var sampleData={
 
+//fill with info
+    };
+}
+
+}
+var html=generateCard(sampleData);
+$("#cards").append(html);
 
 
   

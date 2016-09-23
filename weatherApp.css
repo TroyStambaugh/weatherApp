@@ -1,8 +1,78 @@
 
 
-.tempbord{
-border:1px;
-color:black;
+.cd1{
+background-image:url(wimage/sunny.jpeg);
+            border-radius: 10px;
+            padding: 25px;
+            color:black;
+            border:3px; 
+            border-style:solid;
+            text-align:center;
+            font-size:25px ; 
+            background-repeat:no-repeat; 
+            background-size:750px; 
+} 
 
+.cd2{
+background-image:url(wimage/rain.jpeg);
+            border-radius: 10px;
+            padding: 25px;
+            color:black;
+            border:3px; 
+            border-style:solid;
+            text-align:center;
+            font-size:25px ; 
+            background-repeat:no-repeat; 
+            background-size:750px; 
+} 
 
-}
+.cd3{
+background-image:url(wimage/cloudy.jpeg);
+            border-radius: 10px;
+            padding: 25px;
+            color:black;
+            border:3px; 
+            border-style:solid;
+            text-align:center;
+            font-size:25px ; 
+            background-repeat:no-repeat; 
+            background-size:750px; 
+} 
+
+.cd4{
+background-image:url(wimage/sleet.jpeg);
+            border-radius: 10px;
+            padding: 25px;
+            color:black;
+            border:3px; 
+            border-style:solid;
+            text-align:center;
+            font-size:25px ; 
+            background-repeat:no-repeat; 
+            background-size:800px; 
+} 
+
+.cd5{
+background-image:url(wimage/snow.jpeg);
+            border-radius: 10px;
+            padding: 25px;
+            color:black;
+            border:3px; 
+            border-style:solid;
+            text-align:center;
+            font-size:25px ; 
+            background-repeat:no-repeat; 
+            background-size:800px; 
+} 
+.cd6{
+background-image:url(wimage/clear.jpeg);
+            border-radius: 10px;
+            padding: 25px;
+            color:black;
+            border:3px; 
+            border-style:solid;
+            text-align:center;
+            font-size:25px ; 
+            background-repeat:no-repeat; 
+            background-size:750px; 
+} 
