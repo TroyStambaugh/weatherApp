@@ -88,9 +88,9 @@ $(function () {
 
 function generateCard(personInfo){
 var template=$("#template").html();
-template=template.replace("");
-template=template.replace("");
-template=template.replace("");
+template=template.replace("#template");
+template=template.replace("#template");
+template=template.replace("#template");
 return template;
 
 function testGenerateCard(){
