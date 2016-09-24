@@ -66,7 +66,7 @@ function lookupLatLong_Complete(result) {
         
     
 function lookupWeatherForPostalCode_Click() {
-    var pcode = $("#postalCode").val();
+    var pcode = $("#ZIP").val();
     lookupLatLong("", "", pcode);
 }
 function newCard (){
@@ -95,7 +95,7 @@ function newCard (){
 
 $(function () {
     $("#lookupWeatherForPostalCode").on("click", lookupWeatherForPostalCode_Click)
-    $(document).on('click', '#removeCard', function() {
+    $(document).on('click', '#remove', function() {
        $(this).closest('div').remove();
    });
   
