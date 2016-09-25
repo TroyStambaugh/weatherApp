@@ -14,14 +14,14 @@ body{
 }
 
 #temp{
-    font-size:20px;
+    font-size:25px;
     text-align: center;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
    
 }
 #city{
-    font-size: 15px;
+    font-size: 20px;
     color: white;
     text-align: center;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -33,3 +33,11 @@ body{
     font-size: 15px;
     
 }
+
+#fbIcon{
+
+    height:50px;
+    width:50px;
+}
+
+
