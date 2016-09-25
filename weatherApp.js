@@ -102,10 +102,10 @@ $(function () {
 });
 
 
-switch (weatherdata){
+switch (weather){
     case "clear-day":
           break;
-    case "clear-night": 
+    case "clear-night":
             break;
     case "wind":
             break;
