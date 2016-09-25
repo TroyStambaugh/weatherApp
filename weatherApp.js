@@ -102,8 +102,8 @@ $(function () {
 });
 
 
-switch (weather){
-    case "clear-day":
+switch (weatherdata.icon){
+    case "clear-day":"url(wimage/sunny.jpeg)";
           break;
     case "clear-night":
             break;
